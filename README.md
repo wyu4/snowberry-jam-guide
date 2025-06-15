@@ -1,5 +1,7 @@
 # Snowberry Jam Guide
-> This is a sub-repository of the Snowberry Jam compiler. Click [here](https://github.com/wyu4/snowberry-jam.git) to see the full repository.
+This is a sub-repository of the Snowberry Jam compiler. Click [here](https://github.com/wyu4/snowberry-jam.git) to see the full repository.
+
+> This website is powered by [docsify](https://github.com/docsifyjs/docsify/), and deployed on [Vercel](https://vercel.com/).
 
 ## Initialization
 ### Install [**Docsify**](https://docsify.js.org/#/)
