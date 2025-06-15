@@ -5,3 +5,8 @@ Install [**Docsify**](https://docsify.js.org/#/)
 ```bash
 npm i docsify-cli -g
 ```
+
+# Previewing
+```bash
+docsify serve docs
+```

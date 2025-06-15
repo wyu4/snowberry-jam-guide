@@ -1,7 +1,9 @@
-> This is a sub-repository of the Snowberry Jam compiler. Click [here](https://github.com/wyu4/snowberry-jam.git) to see the full repository.
+# Snowberry Jam
+> This was made in over 70+ hours as a final project for the **ICS4U** Computer Science course.
 
-# Initialisation
-Install [**Docsify**](https://docsify.js.org/#/)
-```bash
-npm i docsify-cli -g
-```
+**Welcome to the Snowberry Jam language guide!**<br>
+Snowberry Jam is a coding language built around a `JSON`-based syntax, designed to feel like the save file of a block-based editor. Upon compilation, Snowberry Jam uniquely includes a visual block representation of the code, as well as a variable display with live values as the code runs.
+
+If you haven't yet installed Snowberry Jam, please do so [here](https://github.com/wyu4/snowberry-jam/releases/latest).
+
+> Powered by [docsify](https://github.com/docsifyjs/docsify/).
