@@ -11,7 +11,7 @@ app.get("/", (req, res) => res.sendFile(path.join(docs, "index.html")));
 
 app.get("/:filename.md", (req, res) => {
   const mdFilePath = path.join(docs, `${req.params.filename}.md`);
-  console.log(mdFilePath);
+  console.log("Getting markdown file: " + mdFilePath);
 
   fs.readFile(mdFilePath, "utf8", (err, data) => {
     if (err) {
