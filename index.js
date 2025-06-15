@@ -15,6 +15,7 @@ app.get("/:filename.md", (req, res) => {
 
   fs.readFile(mdFilePath, "utf8", (err, data) => {
     if (err) {
+      console.error(err.message);
       res.status(404).send("Markdown file not found");
       return;
     }
