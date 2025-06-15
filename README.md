@@ -1,12 +1,30 @@
+# Snowberry Jam Guide
 > This is a sub-repository of the Snowberry Jam compiler. Click [here](https://github.com/wyu4/snowberry-jam.git) to see the full repository.
 
-# Initialization
-Install [**Docsify**](https://docsify.js.org/#/)
+## Initialization
+### Install [**Docsify**](https://docsify.js.org/#/)
 ```bash
 npm i docsify-cli -g
 ```
+### Install [**Vercel**](https://docsify.js.org/#/)
+```bash
+npm i vercel -g 
+```
+### Install remaining libraries
+```bash
+npm install
+```
 
-# Previewing
+## Previewing
+### With docsify
 ```bash
 docsify serve docs
+```
+### With Vercel
+```bash
+vercel dev
+```
+or
+```bash
+npm start
 ```
