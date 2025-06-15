@@ -3,25 +3,10 @@ const app = express();
 const path = require("path");
 const fs = require("fs");
 
-const docs = path.join(__dirname, "docs");
+const docs = path.join(__dirname, "public");
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(docs));
 
 app.get("/", (req, res) => res.sendFile(path.join(docs, "index.html")));
-
-app.get("/:filename.md", (req, res) => {
-  const mdFilePath = path.join(docs, `${req.params.filename}.md`);
-  console.log("Getting markdown file: " + mdFilePath);
-
-  fs.readFile(mdFilePath, "utf8", (err, data) => {
-    if (err) {
-      console.error(err.message);
-      res.status(404).send("Markdown file not found");
-      return;
-    }
-    res.set("Content-Type", "text/markdown");
-    res.send(data);
-  });
-});
 
 module.exports = app;
