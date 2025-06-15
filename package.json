@@ -17,7 +17,7 @@
   "scripts": {
     "start": "vercel dev",
     "build": "echo \"Warning: no build script required for static website.\" && exit 0",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "docsify serve public"
   },
   "dependencies": {
     "express": "^5.1.0",

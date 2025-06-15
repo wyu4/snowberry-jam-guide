@@ -20,7 +20,11 @@ npm install
 ## Previewing
 ### With docsify
 ```bash
-docsify serve docs
+docsify serve public
+```
+or 
+```bash
+npm test
 ```
 ### With Vercel
 ```bash
