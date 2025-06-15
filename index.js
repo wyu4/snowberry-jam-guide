@@ -10,8 +10,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => res.sendFile(path.join(docs, "index.html")));
 
 app.get("/:filename.md", (req, res) => {
-  const filename = req.params.filename;
-  const mdFilePath = path.join(docs, `${filename}.md`);
+  const mdFilePath = path.join(docs, `${req.params.filename}.md`);
+  console.log(mdFilePath);
 
   fs.readFile(mdFilePath, "utf8", (err, data) => {
     if (err) {
