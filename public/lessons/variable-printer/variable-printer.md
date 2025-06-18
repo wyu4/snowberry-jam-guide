@@ -82,7 +82,7 @@ Head over to `ON_RUN`, and create a print block for your variable.
 }
 ```
 
-## 4. Running
+## 4. Running <!-- {docsify-ignore} -->
 Now that the code is put together, we can finally run it!
 
 You should see something like this in the console:
