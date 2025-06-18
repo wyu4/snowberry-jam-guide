@@ -39,4 +39,4 @@ A **value** block that points to the value of a variable.
 | -------- | ------------------------------------------------------------------------------------------------------------ |
 | `name`     | The name of the variable to point to. Can be any type, but will automatically be converted into string form. |
 
-!> Accessing a variable that wasn't created the same way as the section [Creating a Variable](#Creating-a-Variable) will raise an exception.
+!> Accessing a variable that wasn't created the same way as in the section [Creating a Variable](#Creating-a-Variable) will raise an exception.
