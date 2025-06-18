@@ -25,7 +25,7 @@ Variables need to be created in the `variables` section before they can be used.
 ```
 
 ## The Variable Block
-This is a block that points to the value of a variable.
+A **value** block that points to the value of a variable.
 
 ```json
 {
@@ -33,8 +33,10 @@ This is a block that points to the value of a variable.
     "name": "myNumber"
 }
 ```
+> The above will point to variable "myNumber", which is currently set to 123.
+
 | Property | Meaning                                                                                                      |
 | -------- | ------------------------------------------------------------------------------------------------------------ |
-| name     | The name of the variable to point to. Can be any type, but will automatically be converted into string form. |
+| `name`     | The name of the variable to point to. Can be any type, but will automatically be converted into string form. |
 
 !> Accessing a variable that wasn't created the same way as the section [Creating a Variable](#Creating-a-Variable) will raise an exception.
