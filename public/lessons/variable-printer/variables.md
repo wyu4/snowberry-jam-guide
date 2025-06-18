@@ -1,0 +1,42 @@
+# Variables
+## Creating a Variable
+Variables need to be created in the `variables` section before they can be used. Here are some examples:
+```json
+{
+    "variables" : [
+        {
+            "name" : "myString",
+            "value" : "This variables has text."
+        },
+        {
+            "name" : "myNumber",
+            "value" : 123
+        },
+        {
+            "name" : "myArray",
+            "value" : ["this", "is", "an", "array."]
+        },
+        {
+            "name" : "myBoolean",
+            "value" : false
+        },
+    ]
+}
+```
+
+## The Variable Block
+A **value** block that points to the value of a variable.
+
+```json
+{
+    "id": "VARIABLE",
+    "name": "myNumber"
+}
+```
+> The above will point to variable "myNumber", which is currently set to 123.
+
+| Property | Meaning                                                                                                      |
+| -------- | ------------------------------------------------------------------------------------------------------------ |
+| `name`     | The name of the variable to point to. Can be any type, but will automatically be converted into string form. |
+
+!> Accessing a variable that wasn't created the same way as in the section [Creating a Variable](#Creating-a-Variable) will raise an exception.
