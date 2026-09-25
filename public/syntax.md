@@ -7,8 +7,12 @@ Snowberry Jam offers two different types of "blocks", each having their own cate
 ### Tasks
 These are blocks that actually run in the code. This includes printing, variable setting, loops, and etc. These, without [values](#Values), are like empty shells.
 
+?> See the [Tasks guide](guides/tasks/README.md) for a list of every task block.
+
 ### Values
 These are blocks that point or represent a certain piece of data. This can range from primitive values such as numbers, text, arrays, or more complicated operations such as math operations, equalities, and boolean algebra. Values are used to store data, and are accessed by the task blocks.
+
+?> See the [Values guide](guides/values/README.md) for a list of every value block.
 
 ## Format
 All blocks share the same JSON structure, while having different keys.
@@ -17,7 +21,7 @@ Here's an example of a block that prints "hello world" to the console:
 ```json
 {
     "id" : "PRINT",
-    "value": "Hello World!"
+    "value" : "Hello World!"
 }
 ```
 

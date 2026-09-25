@@ -27,8 +27,8 @@ Head over to the `variables` section, and create a variable called "var", with t
 ```json
 "variables" : [
     {
-        "name": "var",
-        "value": "This is my first project!"
+        "name" : "var",
+        "value" : "This is my first project!"
     }
 ]
 ```
@@ -40,10 +40,10 @@ Head over to `ON_RUN`, and create a print block for your variable.
     "id" : "ON_RUN",
     "body" : [
         {
-            "id": "PRINT",
-            "value": {
-                "id": "VARIABLE",
-                "name": "var"
+            "id" : "PRINT",
+            "value" : {
+                "id" : "VARIABLE",
+                "name" : "var"
             }
         }
     ]
@@ -60,8 +60,8 @@ Head over to `ON_RUN`, and create a print block for your variable.
     "body" : {
         "variables" : [
             {
-                "name": "var",
-                "value": "This is my first project!"
+                "name" : "var",
+                "value" : "This is my first project!"
             }
         ],
         "events" : [
@@ -69,10 +69,10 @@ Head over to `ON_RUN`, and create a print block for your variable.
                 "id" : "ON_RUN",
                 "body" : [
                     {
-                        "id": "PRINT",
-                        "value": {
-                            "id": "VARIABLE",
-                            "name": "var"
+                        "id" : "PRINT",
+                        "value" : {
+                            "id" : "VARIABLE",
+                            "name" : "var"
                         }
                     }
                 ]

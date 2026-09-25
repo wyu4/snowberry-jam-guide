@@ -29,8 +29,8 @@ A **value** block that points to the value of a variable.
 
 ```json
 {
-    "id": "VARIABLE",
-    "name": "myNumber"
+    "id" : "VARIABLE",
+    "name" : "myNumber"
 }
 ```
 > The above will point to variable "myNumber", which is currently set to 123.

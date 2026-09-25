@@ -6,8 +6,8 @@ A **task** block that displays text in the console.
 
 ```json
 {
-    "id": "PRINT",
-    "value": "Hello World"
+    "id" : "PRINT",
+    "value" : "Hello World"
 }
 ```
 > The above will print "Hello World" in the console.
@@ -20,10 +20,10 @@ A **task** block that displays text in the console.
 You can also nest value blocks in the `value` property, which is helpful for printing thigns like variables. This is generally consistent across all task blocks.
 ```json
 {
-    "id": "PRINT",
-    "value": {
-        "id": "VARIABLE",
-        "name": "myVar"
+    "id" : "PRINT",
+    "value" : {
+        "id" : "VARIABLE",
+        "name" : "myVar"
     }
 }
 ```
@@ -37,8 +37,8 @@ Instead of doing:
     "id" : "ON_RUN",
     "body" : [
         {
-            "id": "PRINT",
-            "value": "This is a huge print block."
+            "id" : "PRINT",
+            "value" : "This is a huge print block."
         }
     ]
 }
@@ -51,8 +51,8 @@ Here are some examples:
     "id" : "ON_RUN",
     "body" : [
         {
-            "id": "PRINT",
-            "value": "Hello World!"
+            "id" : "PRINT",
+            "value" : "Hello World!"
         }
     ]
 }
@@ -72,10 +72,10 @@ Here are some examples:
     "id" : "ON_RUN",
     "body" : [
         {
-            "id": "PRINT",
-            "value": {
-                "id": "VARIABLE",
-                "name": "myVar"
+            "id" : "PRINT",
+            "value" : {
+                "id" : "VARIABLE",
+                "name" : "myVar"
             }
         }
     ]
@@ -87,8 +87,8 @@ Here are some examples:
     "id" : "ON_RUN",
     "body" : [
         {
-            "id": "VARIABLE",
-            "name": "myVar"
+            "id" : "VARIABLE",
+            "name" : "myVar"
         }
     ]
 }
