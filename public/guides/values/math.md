@@ -154,3 +154,199 @@ A **value** block that rounds `a` to the nearest whole number. Halves are rounde
     }
 }
 ```
+
+## Sine
+A **value** block that passes `a` through the sine function.
+
+```json
+{
+    "id" : "SIN",
+    "a" : 3.14159
+}
+```
+> The above will point to `0.0` (roughly).
+
+| Property | Meaning              |
+| -------- | -------------------- |
+| `a`      | The angle in radians |
+
+!> `a` must be a number, otherwise an error will be raised.
+
+?> Combine Sine with [Divide](#divide) using the `1/sin(Θ) = csc(Θ)` identity to create the `cosecant` function
+```json
+{
+    "id" : "/",
+    "1" : 1,
+    "b" : {
+        "id" : "SIN",
+        "a" : 2,
+    }
+}
+```
+> The above is equivalent to `csc(2)`
+
+## Cosine
+A **value** block that passes `a` through the cosine function.
+
+```json
+{
+    "id" : "COS",
+    "a" : 3.14159
+}
+```
+> The above will point to `-1.0` (roughly).
+
+| Property | Meaning              |
+| -------- | -------------------- |
+| `a`      | The angle in radians |
+
+!> `a` must be a number, otherwise an error will be raised.
+
+?> Combine Cosine with [Divide](#divide) using the `1/cos(Θ) = sec(Θ)` identity to create the `secant` function
+```json
+{
+    "id" : "/",
+    "a" : 1,
+    "b" : {
+        "id" : "COS",
+        "a" : 2
+    }
+}
+```
+> The above is equivalent to `sec(2)`
+
+## Tangent
+A **value** block that passes `a` through the tangent function.
+
+```json
+{
+    "id" : "TAN",
+    "a" : 0.785398
+}
+```
+> The above will point to `1.0` (roughly).
+
+| Property | Meaning              |
+| -------- | -------------------- |
+| `a`      | The angle in radians |
+
+!> `a` must be a number, otherwise an error will be raised.
+
+?> Combine Tangent with [Divide](#divide) using the `1/tan(Θ) = cot(Θ)` identity to create the `cotangent` function
+```json
+{
+    "id" : "/",
+    "a" : 1,
+    "b" : {
+        "id" : "TAN",
+        "a" : 2
+    }
+}
+```
+> The above is equivalent to `cot(2)`
+
+## Arcsine
+A **value** block that passes `a` through the inverse sine function, giving an angle in radians.
+
+```json
+{
+    "id" : "ASIN",
+    "a" : 1
+}
+```
+> The above will point to `1.5708` (roughly).
+
+| Property | Meaning                                  |
+| -------- | ---------------------------------------- |
+| `a`      | The sine of the angle, from `-1` to `1`  |
+
+!> `a` must be a number between `-1` and `1`, otherwise an error will be raised.
+
+## Arccosine
+A **value** block that passes `a` through the inverse cosine function, giving an angle in radians.
+
+```json
+{
+    "id" : "ACOS",
+    "a" : -1
+}
+```
+> The above will point to `3.14159` (roughly).
+
+| Property | Meaning                                   |
+| -------- | ----------------------------------------- |
+| `a`      | The cosine of the angle, from `-1` to `1` |
+
+!> `a` must be a number between `-1` and `1`, otherwise an error will be raised.
+
+## Arctangent
+A **value** block that passes `a` through the inverse tangent function, giving an angle in radians.
+
+```json
+{
+    "id" : "ATAN",
+    "a" : 1
+}
+```
+> The above will point to `0.785398` (roughly).
+
+| Property | Meaning                  |
+| -------- | ------------------------ |
+| `a`      | The tangent of the angle |
+
+!> `a` must be a number, otherwise an error will be raised.
+
+## Power
+A **value** block that raises `a` to the power of `b`.
+
+```json
+{
+    "id" : "^",
+    "a" : 2,
+    "b" : 3
+}
+```
+> The above will point to `8.0`.
+
+| Property | Meaning                        |
+| -------- | ------------------------------ |
+| `a`      | The base.                      |
+| `b`      | The exponent to raise `a` to.  |
+
+!> Both `a` and `b` must be numbers, otherwise an error will be raised.
+
+?> A fractional exponent is fundementally a [Root](#root). The following is the square root of `9`, and will point to `3.0`:
+```json
+{
+    "id" : "^",
+    "a" : 9,
+    "b" : 0.5
+}
+```
+
+## Root
+A **value** block that takes the `b`th root of `a`.
+
+```json
+{
+    "id" : "ROOT",
+    "a" : 27,
+    "b" : 3
+}
+```
+> The above will point to `3.0`.
+
+| Property | Meaning                                           |
+| -------- | ------------------------------------------------- |
+| `a`      | The radicand (the number to take the root of).    |
+| `b`      | The index of the root. Optional, defaults to `2`. |
+
+?> Leave out `b` to take the square root. The following will point to `3.0`:
+```json
+{
+    "id" : "ROOT",
+    "a" : 9
+}
+```
+
+!> `a` must be a number, otherwise an error will be raised. If `b` isn't a number, it will be treated as `2`.
