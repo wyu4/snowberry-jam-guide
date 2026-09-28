@@ -1,6 +1,7 @@
 * [Home](/)
 * [Code Syntax](syntax.md)
 * [Project Structure](project.md)
+* [Command Line](terminal.md)
 
 * Lessons
   * [**1.** Variables](lessons/variable-printer/variables.md)
@@ -36,3 +37,4 @@
     * [Loops](guides/tasks/loops.md)
     * [Timing](guides/tasks/timing.md)
     * [Threads](guides/tasks/threads.md)
+* [Examples](https://github.com/wyu4/snowberry-jam/tree/master/example)

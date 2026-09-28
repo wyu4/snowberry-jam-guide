@@ -1,1 +1,18 @@
 @import url(./chakra-petch.css);
+
+/* Terminal output with block-character art: use fonts that include the
+   block-element glyphs (so no per-glyph fallback) and tight line spacing
+   so the rows join up. */
+.markdown-section pre[data-lang="terminal"],
+.markdown-section pre[data-lang="terminal"] > code {
+  font-family: Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  font-size: small;
+  line-height: 1.15;
+  letter-spacing: 0;
+  font-variant-ligatures: none;
+}
+
+.markdown-section pre[data-lang="terminal"] > code {
+  white-space: pre;
+  overflow-x: auto;
+}
